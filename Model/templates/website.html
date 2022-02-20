@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lower Back Pain Application</title>
+	<h1 style="text-align: center;">Lower Back Pain Analysis Using Machine Learning</h1>
+        <p style="text-align: center;">This application aims at analyzing and identifying any abnormalities present with regard to the values entered in the form below.The proposed algorithm would be <b>Gradient Tree Boosting </b> </p>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            Pelvic_incidence: <input type="decimal" name="Pelvic_incidence", placeholder="Enter the  pelvic_incidence" required/>
+            <br><br>
+            Pelvic_tilt: <input type="ndecimal" name="Pelvic_tilt", placeholder="Enter the pelvic_tilt" required/>
+            <br><br>
+           Lumbar_Lordosis_Angle: <input type="decimal" name="Lumbar_Lordosis_Angle", placeholder="Enter the lumbar_lordosis_angle" required/>
+            <br><br>
+            Sacral_slope: <input type="decimal" name="Sacral_slope", placeholder="Enter the sacral_slope" required/>
+            <br><br>
+            Pelvic_radius: <input type="decimal" name="Pelvic_radius", placeholder="Enter the pelvic_radius" required/>
+            <br><br>
+            Degree_spondylolisthesis: <input type="decimal" name="Degree_spondylolisthesis", placeholder="Enter the degree_spondylolisthesis" required/>
+            <br><br>
+            Pelvic_slope: <input type="decimal" name="Pelvic_slope", placeholder="Enter the pelvic_slope" required/>
+            <br><br>
+            Direct_tilt: <input type="decimal" name="Direct_tilt", placeholder="Enter the Direct_tilt" required/>
+            <br><br>
+            Thoracic_slope: <input type="decimal" name="Thoracic_slope", placeholder="Enter the thoracic_slope" required/>
+            <br><br>
+            Cervical_tilt: <input type="decimal" name="Cervical_tilt", placeholder="Enter the cervical_tilt" required/>
+            <br><br>
+            Sacrum_angle: <input type="decimal" name="Sacrum_angle", placeholder="Enter the sacrum_angle" required/>
+            <br><br>
+            Scoliosis_slope: <input type="decimal" name="Scoliosis_slope", placeholder="Enter the scoliosis_slope" required/>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <p style="text-align: center;"> The Prediction is:<b>{{ output }}</b></p>
+    </body>
+</html>
