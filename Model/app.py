@@ -6,13 +6,13 @@ import joblib
 # Declare a Flask app
 app = Flask(__name__)
 
-# Main function here
 def model_predict(i):
     if i==1:
         return "Normal"
     else:
         return "Abnormal"
 @app.route('/', methods=['GET', 'POST'])
+# Main function here
 def main():
     
     # If a form is submitted
